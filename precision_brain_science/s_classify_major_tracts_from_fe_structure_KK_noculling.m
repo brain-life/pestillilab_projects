@@ -6,7 +6,7 @@ addpath(genpath(fullfile(rootpath,'code/ccaiafa/Caiafa_Pestilli_paper2015/lifebi
 addpath(genpath(fullfile(rootpath,'code/vistasoft')))
 addpath(genpath(fullfile(rootpath,'code/franpest/AFQ/')))
 
-subject = {'KW'}; % why not JW?
+subject = {'KK'}; % why not JW?
 runType = {'connNUM01','connNUM02','connNUM03','connNUM04', ...
            'connNUM05','connNUM06','connNUM07','connNUM08', ... 
            'connNUM09','connNUM10'};

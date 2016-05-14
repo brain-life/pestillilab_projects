@@ -3921,3 +3921,1040 @@ Fine Affine Registration..
  iteration 15:  FWHM =  10.18 Var = 2.65506
  iteration 16:  FWHM =  10.18 Var = 2.65464
 Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax10_connNUM03_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#3 
+
+ Working on Subject FP Run#4 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax10_connNUM04_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#4 
+
+ Working on Subject FP Run#5 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax10_connNUM05_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#5 
+
+ Working on Subject FP Run#6 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax10_connNUM06_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#6 
+
+ Working on Subject FP Run#7 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax10_connNUM07_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#7 
+
+ Working on Subject FP Run#8 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax10_connNUM08_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#8 
+
+ Working on Subject FP Run#9 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax10_connNUM09_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#9 
+
+ Working on Subject FP Run#10 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax10_connNUM10_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#10 
+
+ Working on Subject FP Run#1 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_PROB_lmax12_connNUM01_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#1 
+
+ Working on Subject FP Run#2 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_PROB_lmax12_connNUM02_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#2 
+
+ Working on Subject FP Run#3 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_PROB_lmax12_connNUM03_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#3 
+
+ Working on Subject FP Run#4 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_PROB_lmax12_connNUM04_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#4 
+
+ Working on Subject FP Run#5 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_PROB_lmax12_connNUM05_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#5 
+
+ Working on Subject FP Run#6 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_PROB_lmax12_connNUM06_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#6 
+
+ Working on Subject FP Run#7 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_PROB_lmax12_connNUM07_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#7 
+
+ Working on Subject FP Run#8 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_PROB_lmax12_connNUM08_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#8 
+
+ Working on Subject FP Run#9 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_PROB_lmax12_connNUM09_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#9 
+
+ Working on Subject FP Run#10 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_PROB_lmax12_connNUM10_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#10 
+
+ Working on Subject FP Run#1 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax12_connNUM01_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#1 
+
+ Working on Subject FP Run#2 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax12_connNUM02_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#2 
+
+ Working on Subject FP Run#3 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax12_connNUM03_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#3 
+
+ Working on Subject FP Run#4 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax12_connNUM04_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#4 
+
+ Working on Subject FP Run#5 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax12_connNUM05_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#5 
+
+ Working on Subject FP Run#6 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax12_connNUM06_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#6 
+
+ Working on Subject FP Run#7 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax12_connNUM07_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#7 
+
+ Working on Subject FP Run#8 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax12_connNUM08_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#8 
+
+ Working on Subject FP Run#9 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax12_connNUM09_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#9 
+
+ Working on Subject FP Run#10 
+Load FE structure...
+Extract fibers...
+Segment tracts...
+You chose to recompute ROIs
+Fibers that get as close to the ROIs as 2mm will become candidates for the Mori Groups
+Smoothing by 0 & 8mm..
+Coarse Affine Registration..
+Fine Affine Registration..
+3D CT Norm...
+ iteration  1:  FWHM =  15.86 Var = 62.9983
+ iteration  2:  FWHM =  10.53 Var = 3.65625
+ iteration  3:  FWHM =  10.26 Var = 2.90341
+ iteration  4:  FWHM =  10.21 Var = 2.75882
+ iteration  5:  FWHM =   10.2 Var = 2.71042
+ iteration  6:  FWHM =  10.19 Var = 2.68973
+ iteration  7:  FWHM =  10.19 Var = 2.67871
+ iteration  8:  FWHM =  10.18 Var = 2.67045
+ iteration  9:  FWHM =  10.18 Var = 2.664
+ iteration 10:  FWHM =  10.18 Var = 2.66146
+ iteration 11:  FWHM =  10.18 Var = 2.65821
+ iteration 12:  FWHM =  10.18 Var = 2.657
+ iteration 13:  FWHM =  10.18 Var = 2.65612
+ iteration 14:  FWHM =  10.18 Var = 2.65552
+ iteration 15:  FWHM =  10.18 Var = 2.65506
+ iteration 16:  FWHM =  10.18 Var = 2.65464
+Computing inverse deformation...
+Save results to disk...
+
+
+
+ Saved file: 
+fe_structure_FP_96dirs_b2000_1p5iso_STC_run01_500000_SD_STREAM_lmax12_connNUM10_TRACTS-nocull.mat 
+
+
+
+ DONE Subject FP Run#10 
+>> 

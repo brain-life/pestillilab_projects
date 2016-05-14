@@ -30,9 +30,11 @@ for isbj = 1:length(subject)
         fasciclesClassificationSaveName = sprintf('fe_structure_%s_STC_run01_500000_%s_%s_TRACTS.mat', ...
                  subject{isbj},trackingType{iTrack}, runType{iRun});
         dtFile  = fullfile(rootpath,sprintf('2t1/HCP/%s/dt6_b2000trilin/dt6.mat',subject{isbj}));
+        
         fe_file = fullfile(fe_path,subject{isbj},fe_name);
         tracts_file = fullfile(fe_path,fasciclesClassificationSaveName);
-
+        
+        if ~exist(tracts_file,'file')
         disp('Load FE structure...')
         load(fe_file);
         w = feGet(fe,'fiber weights');
@@ -53,6 +55,9 @@ for isbj = 1:length(subject)
         clear fg_classified fascicles
         
         fprintf('\n DONE Subject %s Run#%i \n',subject{isbj},iRun)
+        else
+        fprintf('\n TRACT %s Subject %s Run#%i FOUDN SKIPPING ...\n',trackingType{iTrack}, subject{isbj},iRun)
+        end
     end
 end
 end

@@ -35,6 +35,8 @@ for isbj = 1:length(subject)
         fe_file = fullfile(fe_path,subject{isbj},fe_name);
         tracts_file = fullfile(fe_path,fasciclesClassificationSaveName);
 
+        if ~exist(tracts_file,'file')
+
         disp('Load FE structure...')
         load(fe_file);
         
@@ -53,6 +55,8 @@ for isbj = 1:length(subject)
         clear fg_classified fascicles
         
         fprintf('\n DONE Subject %s Run#%i \n',subject{isbj},iRun)
+        
+        end
     end
 end
 end

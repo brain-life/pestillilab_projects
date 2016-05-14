@@ -40,3 +40,6 @@ Error in s_classify_major_tracts_from_fe_structure_110411_noculling (line 37)
 } 
 SPM (Statistical Parametric Mapping) software package version 8 loaded.
 MATLAB numerical calculation framework version 2015a loaded.
+SPM (Statistical Parametric Mapping) software package version 8 loaded.
+MATLAB numerical calculation framework version 2015a loaded.
+=>> PBS: job killed: walltime 172832 exceeded limit 172800

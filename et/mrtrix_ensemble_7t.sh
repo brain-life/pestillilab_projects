@@ -20,18 +20,18 @@ SUBJ=$1
 ## TOPDIR=/N/dc2/projects/lifebid/2t1/predator/$SUBJ
 
 ## HCP dataset
-DWIFILENAME=dwi_data_b2000_aligned_trilin
-TOPDIR=/N/dc2/projects/lifebid/2t1/HCP/$SUBJ
+DWIFILENAME=data_b2000
+TOPDIR=/N/dc2/projects/lifebid/HCP7/$SUBJ
 
 ## STN96 dataset
 ANATDIR=$TOPDIR/anatomy/
-OUTDIR=$TOPDIR/fibers_new
+OUTDIR=$TOPDIR/fibers
 
 mkdir -v $OUTDIR
 
 ## Number of fibers requested and max number attempted to hit the number.
 NUMFIBERS=500000
-MAXNUMFIBERSATTEMPTED=1000000
+MAXNUMFIBERSATTEMPTED=1500000
 
 ##
 echo 
@@ -66,7 +66,7 @@ estimate_response $OUTDIR/${DWIFILENAME}_dwi.mif $OUTDIR/${DWIFILENAME}_sf.mif -
 ## # End estimation of deconvolution kernel
 
 ## Perform CSD in each white matter voxel
-for i_lmax in 2 4 6 8 10 12; do
+for i_lmax in 2 4 6 8; do
     csdeconv $OUTDIR/${DWIFILENAME}_dwi.mif -grad $OUTDIR/$DWIFILENAME.b $OUTDIR/${DWIFILENAME}_response.txt -lmax $i_lmax -mask $OUTDIR/${DWIFILENAME}_brainmask.mif $OUTDIR/${DWIFILENAME}_lmax${i_lmax}.mif
 ## echo DONE Lmax=$i_lmax 
 done 
@@ -89,7 +89,7 @@ for i_tracktype in SD_STREAM SD_PROB; do
 ##
 ##echo Tracking $i_tracktype Deterministic=1 Probabilistic=2 CSD-based
 ##
-    for i_lmax in 2 4 6 8 10 12; do
+    for i_lmax in 2 4 6 8; do
 	##echo Tracking CSD-based Lmax=$i_lmax
 	streamtrack $i_tracktype $OUTDIR/${DWIFILENAME}_lmax${i_lmax}.mif   $OUTDIR/${DWIFILENAME}_csd_lmax${i_lmax}_wm_${i_tracktype}-NUM${i_track}-$NUMFIBERS.tck -seed $OUTDIR/${DWIFILENAME}_wm.mif  -mask $OUTDIR/${DWIFILENAME}_wm.mif  -grad $OUTDIR/$DWIFILENAME.b -number $NUMFIBERS -maxnum $MAXNUMFIBERSATTEMPTED
     done
