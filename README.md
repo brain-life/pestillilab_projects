@@ -5,9 +5,6 @@ This repository contains code currently being developed for research projects in
 ### LiFE connectomics (Brent McPherson)
   Repository subfolder name: /life_conn
 
-### White matter plasticity (Sam Faber)
-  Repository subfolder name: /wmp
-
 ### Computational brain anatomy (Dan Bullock)
   Repository subfolder name: /vertra
 
