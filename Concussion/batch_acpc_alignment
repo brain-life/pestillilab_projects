@@ -1,0 +1,14 @@
+#!/bin/bash -x
+
+## Script to call to matlab to realign t1 to ac-pc using mrAnatAverageAcpcNifti.  Created by Brad Caron (Indiana University graduate student) for study on white matter microstructure in concussion-prone athletics 2016.
+
+
+## Set up variables
+rootpath="/N/dc2/projects/lifebid/Concussion/concussion_test";
+subj="1_5";
+diffdir1="$rootpath/$subj/diffusion_directory/Anatomy";
+
+for subjects in $subj
+	do
+		. /N/dc2/projects/lifebid/code/bacaron/pestillilab_projects/Concussion/open_matlab
+done

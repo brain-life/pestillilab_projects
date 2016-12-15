@@ -1,0 +1,33 @@
+#!/bin/bash -x
+#PBS -l nodes=1:ppn=16,walltime=1:00:00
+
+## Script for splitting shells of multi-shell diffusion data.  This script will call to a matlab script that will
+## create individual data files, bvecs and bvals for each shell and will also create a .b file that is needed for mrtrix_ensemble.
+## Written by Franco Pestilli, modified for use in white matter microstructure of concussion-prone
+## athletics study (Brad Caron, graduate student) Indiana University 2016.
+
+## make sure mrtrix is loaded
+module unload mrtrix/0.3.12
+module load mrtrix/0.2.12
+
+## Setting up variables
+subj="1_5"
+projdir1="/N/dc2/projects/lifebid/Concussion/concussion_test"
+
+## Organize Folders
+for subjects in $subj
+	do
+		# Organize file structure
+		cd $projdir1/$subj
+		mkdir -v diffusion_data
+		cd diffusion_data
+		mkdir -v fibers
+		cp -v ./diffusion_directory/diffusion/PA/bvals ./diffusion_data/data.bvals
+		cp -v ./diffusion_directory/diffusion/PA/bvecs ./diffusion_data/data.bvecs
+		cp -v ./diffusion_directory/diffusion/data.nii.gz ./diffusion_data/data.nii.gz
+		cp -v /N/dc2/projects/lifebid/Concussion/bvals_bvecs_split.m ./diffusion_data/bvals_bvecs_split.m	
+		# Split data into separate files (BVALS = 1000 and 2000)
+		matlab > bvecs_bvals_split.m
+done
+
+
