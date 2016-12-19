@@ -1,9 +1,11 @@
 #!/bin/bash -x
 
+## Shell script to set-up date directory for dti_init batch.  Developed by Brad Caron (IU Graduate Student, 2016) for use in microstructure of concussion-prone athletics study.
+
 ## Set up variables
-rootpath="/N/dc2/projects/lifebid/Concussion/concussion_test";
-subj="1_5";
-diffdir1="$rootpath/$subj";
+datadir1="/N/dc2/projects/lifebid/Concussion/concussion_test";  ## path to study directory
+subj="1_5"; # subjects from study
+diffdir1="$datadir1/$subj"; # stem directory
 stem="data"
 
 for subjects in $subj

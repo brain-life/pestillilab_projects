@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/bash -x
+
+## Bash script to run all of the scripts used for processing data generated from microstructure in concussion-prone athletics study (Brad Caron, IU graduate student, 2016)
 
 cd /N/dc2/projects/lifebid/code/bacaron/pestillilab_projects/Concussion
 . batch_diffusion_clean;

@@ -1,13 +1,13 @@
-%% Script for segmenting fibers following mrtrix ensemble
+%% Script for segmenting fibers following mrtrix ensemble.  Developed by Franco Pestilli (2016); script compiled by Brad Caron (IU Grad student, 2016) used in microstructure of concussion-prone athletics study. Script designed for use in matlab.
 
 % Read in fiber, set variables
 
-rootpath = '/N/dc2/projects/lifebid/Concussion/concussion3';
-subj = '1_5';
-lmaxparam = {'2','4','6','8','10','12'};
-numberparam = { '01', '02', '03', '04', '05', '06', '07','08','09','10'};
-streamprob = {'PROB','STREAM'};
-tensor = 'tensor';
+rootpath = '/N/dc2/projects/lifebid/Concussion/concussion3'; % Data directory path
+subj = '1_5'; % Subject; include all subjects for batch
+lmaxparam = {'2','4','6','8','10','12'}; % lmax parameters from mrtrix ensemble
+numberparam = { '01', '02', '03', '04', '05', '06', '07','08','09','10'}; % number parameter from mrtrix ensemble
+streamprob = {'PROB','STREAM'}; % probability or strealine from mrtrix ensemble
+tensor = 'tensor'; % tensor model
 
 for ilm = 1:length(lmaxparam)
 	for inm = 1:length(numberparam)

@@ -6,9 +6,9 @@
 module load fsl/5.0.9
 
 ## Set up variables
-rootpath="/N/dc2/projects/lifebid/Concussion/concussion_test";
-subj="1_5";
-diffdir1="$rootpath/$subj/diffusion_directory/Anatomy";
+datadir1="/N/dc2/projects/lifebid/Concussion/concussion_test";  # Data directory; replace with your data directory set-up.
+subj="1_5";  # subjects for study; include all subjects once data directory is set-up properly
+diffdir1="$datadir1/$subj/diffusion_directory/Anatomy"; # path to Anatomy directory
 
 for subjects in $subj
 	do

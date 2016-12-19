@@ -7,10 +7,10 @@
 module load fsl/5.0.9
 
 ## Set up variables
-rootpath="/N/dc2/projects/lifebid/Concussion/concussion_test";
-subj="1_5";
-diffdir1="$rootpath/$subj/diffusion_directory/diffusion";
-diffphase="PA AP";
+datadir1="/N/dc2/projects/lifebid/Concussion/concussion_test"; # Data directory; replace with your data directory set-up.
+subj="1_5"; # subjects for study; include all subjects once data directory is set-up properly for batch
+diffdir1="$datadir1/$subj/diffusion_directory/diffusion"; # path to diffusion directory
+diffphase="PA AP"; # Phase encoding directorion folders
 
 ## Eddy-current correction, reorganization of output from eddy_current correction, combination to make a no
 ## -diffusion mean file, and perform brain extraction on both phase encoding directions
