@@ -19,7 +19,7 @@ for phase in $diffphase
 	do
 		cd $diffdir1/$phase;
 		eddy_correct $phase r$phase 0;
-		. $rootpath/$subj/diffusion_directory/bin/reorgDTI r$phase;
+		. $datadir1/$subj/diffusion_directory/bin/reorgDTI r$phase;
 		fslmaths nodif -Tmean ${phase}_nodif_mean;
 		bet ${phase}_nodif_mean nodif_brain -f 0.4 -g 0 -m;
 done
