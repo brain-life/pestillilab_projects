@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /N/dc2/projects/lifebid/code/bacaron/pestillilab_projects/Concussion
+. batch_diffusion_clean;
+. batch_acpc_alignment;
+. shell_splitting_batch;
+. freesurfer_script;
+. dtiinit_batch;
+

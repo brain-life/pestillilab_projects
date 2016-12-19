@@ -2,6 +2,8 @@
 
 ## Script to call to matlab to realign t1 to ac-pc using mrAnatAverageAcpcNifti.  Created by Brad Caron (Indiana University graduate student) for study on white matter microstructure in concussion-prone athletics 2016.
 
+## load modules
+module load fsl/5.0.9
 
 ## Set up variables
 rootpath="/N/dc2/projects/lifebid/Concussion/concussion_test";
@@ -10,5 +12,8 @@ diffdir1="$rootpath/$subj/diffusion_directory/Anatomy";
 
 for subjects in $subj
 	do
-		. /N/dc2/projects/lifebid/code/bacaron/pestillilab_projects/Concussion/open_matlab
+		cd $diffdir1
+		cp /N/dc2/projects/lifebid/code/bacaron/pestillilab_projects/Concussion/ACPC_script.m ./ACPC_script.m		 
+		matlab -r "ACPC_script"
+		bet t1_acpc.nii.gz t1_acpc_brain.nii.gz -m -f 0.25
 done

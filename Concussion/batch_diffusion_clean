@@ -20,8 +20,8 @@ for phase in $diffphase
 		cd $diffdir1/$phase;
 		eddy_correct $phase r$phase 0;
 		. $rootpath/$subj/diffusion_directory/bin/reorgDTI r$phase;
-		fslmaths nodif -Tmean $phase_nodif_mean;
-		bet $phase_nodif_mean nodif_brain -f 0.4 -g 0 -m;
+		fslmaths nodif -Tmean ${phase}_nodif_mean;
+		bet ${phase}_nodif_mean nodif_brain -f 0.4 -g 0 -m;
 done
 
 ## Merge directions, apply top-up, fit tensors
@@ -31,5 +31,7 @@ fslmerge -t b0_images ./PA/PA_nodif_mean ./AP/AP_nodif_mean
 topup --imain=b0_images.nii.gz --datain=acq_params.txt --config=b02b0.cnf --out=my_topup_results --fout=my_field --iout=my_unwarped_images
 applytopup --imain=./PA/rPA.nii.gz,./AP/rAP.nii.gz --datain=acq_params.txt --inindex=1,2 --topup=my_topup_results --out=data
 bet data nodif_brain -f 0.4 -g 0 -m
+cp ./PA/bvals ./bvals
+cp ./PA/bvecs ./bvecs
 dtifit --data=data --out=dti --mask=nodif_brain_mask --bvecs=bvecs --bvals=bvals
 

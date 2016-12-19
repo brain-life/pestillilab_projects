@@ -7,20 +7,21 @@ subj = '1_5';
 lmaxparam = {'2','4','6','8','10','12'};
 numberparam = { '01', '02', '03', '04', '05', '06', '07','08','09','10'};
 streamprob = {'PROB','STREAM'};
-tensor = 'tensor'
+tensor = 'tensor';
 
 for ilm = 1:length(lmaxparam)
 	for inm = 1:length(numberparam)
-		for isp = 1:length(streamprob)
-			fe_path = fullfile(rootpath, subj, 'diffusion_data/1000');
-            		fg = fgRead(fullfile(fe_path,'fibers_new',sprintf('data_b1000_aligned_trilin_csd_lmax%s_wm_SD_%s-NUM%s-500000.tck',lmaxparam{ilm},streamprob{isp},numberparam{inm})));
-            		dt6File = fullfile(fe_path,'/dti64trilin/dt6.mat');
-	    		fasciclesClassificationSaveName = fullfile(fe_path,'major_tracts', sprintf('data_b1000_aligned_trilin_csd_lmax%s_wm_SD_%s_NUM%s_500000.mat',lmaxparam{ilm},streamprob{isp},numberparam{inm}))
-	    		for iten = 1:legnth(tensor)
-	    			fe_path = fullfile(rootpath, subj, 'diffusion_data/1000');
-            			fg = fgRead(fullfile(fe_path,'fibers_new',sprintf('data_b1000_aligned_trilin_wm_%s-NUM%s-500000.tck',lmaxparam{ilm},tensor{iten},numberparam{inm})));
+		fe_path = fullfile(rootpath, subj, 'diffusion_data/1000');
+            	fg = fgRead(fullfile(fe_path,'fibers_new',sprintf('data_b1000_aligned_trilin_wm_tensor-NUM%s-500000.tck',numberparam{inm})));
+            	dt6File = fullfile(fe_path,'/dti64trilin/dt6.mat');
+		fasciclesClassificationSaveName = fullfile(fe_path,'major_tracts', sprintf('data_b1000_aligned_trilin_wm_tensor-NUM%s_500000.mat',numberparam{inm}));
+			for isp = 1:length(streamprob)
+				fe_path = fullfile(rootpath, subj, 'diffusion_data/1000');
+            			fg = fgRead(fullfile(fe_path,'fibers_new',sprintf('data_b1000_aligned_trilin_csd_lmax%s_wm_SD_%s-NUM%s-500000.tck',lmaxparam{ilm},streamprob{isp},numberparam{inm})));
             			dt6File = fullfile(fe_path,'/dti64trilin/dt6.mat');
-				fasciclesClassificationSaveName = fullfile(fe_path,'major_tracts', sprintf('data_b1000_aligned_trilin_wm_%s-NUM%s_500000.mat',lmaxparam{ilm},tensor{iten},numberparam{inm}));
+	    			fasciclesClassificationSaveName = fullfile(fe_path,'major_tracts', sprintf('data_b1000_aligned_trilin_csd_lmax%s_wm_SD_%s_NUM%s_500000.mat',lmaxparam{ilm},streamprob{isp},numberparam{inm}));
+	    	
+	    		
 
 % Find the major tracts
 disp('Segment tracts...')
@@ -31,7 +32,6 @@ disp('Save results to disk...')
 save(fasciclesClassificationSaveName,'fg_classified','classification','fascicles','-v7.3')
 fprintf('\n\n\n Saved file: \n%s \n\n\n',fasciclesClassificationSaveName)
     			end
-		end
 	end
 end
 
