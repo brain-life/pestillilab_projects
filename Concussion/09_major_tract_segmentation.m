@@ -1,5 +1,6 @@
-clear fe;
-save(['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/1000/life/optimized_life_connectome_1'], 'fg', '-v7.3');
+%
+% BRAD WRITE GOOD COMMENTS
+%
 
 % AFQ
 dtFile = ['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/1000/dti64trilin/dt6.mat'];
