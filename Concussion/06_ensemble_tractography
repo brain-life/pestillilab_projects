@@ -4,7 +4,8 @@
 ## This shell script uses mrtrix/0.2.12 to run a series of tractography methods using both probabilistic
 ## and deterministic tractography based on the tensor model or on constrained spherical deconvolution. 
 ##
-## Brent McPherson and Franco Pestilli Indiana University 2016; adapted for use in microstructure in concussion-prone athletics study by Brad Caron (IU Graduate Student, 2016)
+## Brent McPherson and Franco Pestilli Indiana University 2016; 
+## adapted by Brad Caron (IU Graduate Student, 2016)
 
 ## load necessary modules on the Karst cluster environment
 module unload mrtrix/0.3.12
