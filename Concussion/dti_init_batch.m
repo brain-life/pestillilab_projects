@@ -1,16 +1,28 @@
 function dti_init_batch
-
-%% Matlab script for running dti_init script in batch form.  dti_init developed by Vistalab (Stanford University; 2014), found in software package vistasoft (https://github.com/brain-life/vistasoft).  Script for init params compiled by Brad Caron (IU Graduate Student, 2016) and used in microstructure of concussion-prone athletics study.
+% function dti_init_batch
+%
+% Matlab script for running dtiInit script in batch form.  
+% https://github.com/vistalab/vistasoft/blob/master/mrDiffusion/dtiInit/dtiInit.m
+%
+% 2017 Brad Caron Indiana University, Pestilli Lab
 
 % build paths
-subj = '1_5'; % subjects for study
-b_vals = {'1000','2000'}; % separate gradient shells
-stem = 'data'; % stem for data output
-projdir1 = '/N/dc2/projects/lifebid/Concussion/concussion_test'; % path to study directory
+% subjects for study
+subj = '1_5';
+
+% separate gradient shells
+b_vals = {'1000','2000'}; 
+
+% stem for data output
+stem = 'data';
+
+% path to study directory
+projdir1 = '/N/dc2/projects/lifebid/Concussion/concussion_test'; 
 
 % dtiinit params and function
 for ii = 1:length(subj)
 	for ibv = 1:length(b_vals)
+	        % Set up dtiInit paramters specific for our study
 		dwParams = dtiInitParams;
 		dwParams.rotateBvecsWithRx = 1;
 		dwParams.rotateBvecsWithCanXform = 1;
@@ -20,6 +32,8 @@ for ii = 1:length(subj)
 		dwParams.dwOutMm = [2.0 2.0 2.0];
 		dwParams.phaseEncodeDir = 2;
 		dwParams.outDir = fullfile(projdir1,sprintf('%s/diffusion_data/%s',subj{ii},b_vals{ibv}));
+		
+		% Start Diffusion Imaging preprocessing.
 		[dt6FileName, outBaseDir] = dtiInit(fullfile(projdir1,sprintf('%s/diffusion_data/%s/raw/data_b%s.nii.gz',subj{ii},b_vals{ibv},b_vals{ibv})), fullfile(projdir1,sprintf('%s/diffusion_data/%s/t1_acpc_bet.nii.gz',subj{ii},b_vals{ibv}),dwParams);
 	end
 end
