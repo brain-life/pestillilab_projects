@@ -3,10 +3,13 @@ function batch_fiber_segmentation
 %
 % BRAD WRITE HEADER
 %
-%Developed by Franco Pestilli (2016); script compiled by Brad Caron (IU Grad student, 2016) used in microstructure of concussion-prone athletics study. Script designed for use in matlab.
+% Developed by Franco Pestilli (2016); 
+% script compiled by Brad Caron (IU Grad student, 2016) used in microstructure of concussion-prone athletics study. Script designed for use in matlab.
+
+% Number of fiber tousefrom eahc individual connectome
+n = 60000;
 
 % Read in fiber, set variables
-
 rootpath = '/N/dc2/projects/lifebid/Concussion/concussion_test'; % Data directory path
 subj = {'1_003', '1_005', '1_006', '1_007', '1_008', '1_009', '1_012', ...
         '1_013', '1_014', '1_015', '1_016', '1_017', '1_019', '1_020', '1_021'}; % Subject; include all subjects for batch
@@ -19,10 +22,8 @@ for ii = 1:length(subj)
          fg = fgRead(fullfile(fe_path,'fibers_new',sprintf('data_b1000_aligned_trilin_noMEC_wm_tensor-500000.tck')));
          dt6File = fullfile(fe_path,'/dti64trilin/dt6.mat');
          fasciclesClassificationSaveName = fullfile(fe_path,'major_tracts', sprintf('data_b1000_aligned_trilin_noMEC_wm_tensor-500000.mat'));
-	
 
 	% Subsample the fascicles 500,000 are too many (eliminate this step in the future by reducing the number of fascicles you track, track 60,000 fascicles max for 13 tractography methods and 100,000x70 data points).
-	n = 60000;
 	fgIdx = randsample(1:length(fg.fibers),n);
 	fg = fgExtract(fg,fgIdx,'keep');
 
