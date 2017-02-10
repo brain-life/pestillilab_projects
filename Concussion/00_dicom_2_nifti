@@ -1,9 +1,16 @@
 #!/bin/bash
 
+## WRITE HEADER BRAD
+
 module load mricron
 
 topdir="/N/dc2/projects/lifebid/Concussion/concussion/group3/"
 subj="3_044"
+
+## Indices refer to the 
+## T1 (ANATOMY, 1) 
+## DWI (PA diffusion, 10) 
+## DWI (AP diffusion, 11) 
 files="2 10 11"
 
 for subj in $subjects
@@ -11,6 +18,8 @@ for subj in $subjects
     for FILES in $files
       do
         cd $topdir/$subjects/$FILES
+        
+        ## This operation will create BVECS/BVALS and NIFTI
         dcm2nii ./1_${FILES}_dicoms
       done
   done
