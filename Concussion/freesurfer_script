@@ -11,7 +11,7 @@ module load fsl/5.0.9
 module load freesurfer
 
 # set up Freesurfer
-export SUBJECTS_DIR=/N/dc2/projects/lifebid/Concussion/test/freesurfer
+export SUBJECTS_DIR=/N/dc2/projects/lifebid/Concussion/concussion_test/freesurfer
 source $FREESURFER_HOME/SetUpFreeSurfer.sh
 
 subj="1_5"; # subjects in study
