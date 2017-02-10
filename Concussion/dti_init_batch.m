@@ -4,7 +4,7 @@ function dti_init_batch
 
 % build paths
 subj = '1_5'; % subjects for study
-b_vals = {'1000','2000'}; % separate magnetic field shells
+b_vals = {'1000','2000'}; % separate gradient shells
 stem = 'data'; % stem for data output
 projdir1 = '/N/dc2/projects/lifebid/Concussion/concussion_test'; % path to study directory
 
@@ -20,7 +20,7 @@ for ii = 1:length(subj)
 		dwParams.dwOutMm = [2.0 2.0 2.0];
 		dwParams.phaseEncodeDir = 2;
 		dwParams.outDir = fullfile(projdir1,sprintf('%s/diffusion_data/%s',subj{ii},b_vals{ibv}));
-		[dt6FileName, outBaseDir] = dtiInit(fullfile(projdir1,sprintf('%s/diffusion_data/%s/raw/data_b%s.nii.gz',subj{ii},b_vals{ibv},b_vals{ibv})), fullfile(projdir1,sprintf('%s/diffusion_data/%s/t1_acpc_bet.nii.gz',subj{ii},b_vals{ibv}), 		dwParams);
+		[dt6FileName, outBaseDir] = dtiInit(fullfile(projdir1,sprintf('%s/diffusion_data/%s/raw/data_b%s.nii.gz',subj{ii},b_vals{ibv},b_vals{ibv})), fullfile(projdir1,sprintf('%s/diffusion_data/%s/t1_acpc_bet.nii.gz',subj{ii},b_vals{ibv}),dwParams);
 	end
 end
 exit;
