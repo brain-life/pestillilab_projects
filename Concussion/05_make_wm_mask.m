@@ -1,9 +1,10 @@
-function s_fe_make_wm_mask_concussion
 %
 % This script makes the white-matter mask used to track the connectomes in
 % Caiafa and Pestilli Manuscript.
 %
-% Copyright Franco Pestilli (c) Indiana University, 2016; adapted by Brad Caron 
+% 
+% Copyright Franco Pestilli (c) Indiana University, 2016; 
+% 2017 adapted by Brad Caron 
 
 % Get the base directory for the data
 anatomypath = '/N/dc2/projects/lifebid/Concussion/concussion_test';
