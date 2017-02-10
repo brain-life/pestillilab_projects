@@ -19,7 +19,7 @@ SUBJ=$1
 
 ## Concussion_Prone dataset
 DWIFILENAME=data_b1000_aligned_trilin
-TOPDIR=/N/dc2/projects/lifebid/Concussion/concussion3/1_5/diffusion_data/1000
+TOPDIR=/N/dc2/projects/lifebid/Concussion/concussion_test/1_5/diffusion_data/1000
 ANATDIR=$TOPDIR/Anatomy/
 OUTDIR=$TOPDIR/fibers_new
 
