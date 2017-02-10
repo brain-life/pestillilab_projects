@@ -18,6 +18,13 @@ fit = feFitModel(feGet(fe,'model'),feGet(fe,'dsigdemeaned'),'bbnnls',Niter,'prec
 
 % Install the fit to the FE structure
 fe = feSet(fe,'fit',fit);
+
 % Save the life model to disk
+save(['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/1000/life/optimized_life_1'], 'fe', '-v7.3');
+
+% Extract the fascicles with positive weight
+w  = feGet(fe,'fiber weights'); % Collect the weights associated with each fiber
+fg = feGet(fe,'fibers acpc');
+fg = fgExtract(fg,w > 0);
 
 end
