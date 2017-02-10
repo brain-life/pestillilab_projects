@@ -25,6 +25,7 @@ save(['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_dat
 % Extract the fascicles with positive weight
 w  = feGet(fe,'fiber weights'); % Collect the weights associated with each fiber
 fg = feGet(fe,'fibers acpc');
-fg = fgExtract(fg,w > 0);
+fg = fgExtract(fg, w > 0);
+save(['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/1000/life/optimized_life_connectome_1'], 'fg', '-v7.3');
 
 end
