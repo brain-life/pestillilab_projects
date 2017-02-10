@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#PBS -k o
+#PBS -l nodes=1:ppn=16,walltime=4:00:00
+#PBS -N conc_1_005_track
+#PBS -m ae
+#PBS -M bacaron@indiana.edu
+
+module load fsl
+module load matlab/2016a
+
+cd /N/dc2/projects/lifebid/Concussion/concussion_test/bin
+matlab -nosplash -nodisplay -r "post_tracking_pipeline_fxn_new_test('1_005', '/N/dc2/projects/lifebid/Concussion/concussion_test/bin/cache')"
