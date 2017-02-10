@@ -23,8 +23,8 @@ for subjects in $subj
 		cp ./data_b2000.bvals ./2000/raw/bvals
 		cp ./data_b2000.bvecs ./2000/bvecs
 		cp ./data_b2000.nii.gz ./2000/raw/data_b2000.nii.gz
-		cp /N/dc2/projects/lifebid/Concussion/concussion3/1_5/diffusion_data/1000/bvecs_real2a ./1000/raw/bvecs_real2a
-		cp /N/dc2/projects/lifebid/Concussion/concussion3/1_5/diffusion_data/1000/bvecs_real2a ./2000/raw/bvecs_real2a
+		cp /N/dc2/projects/lifebid/Concussion/concussion_test/1_5/diffusion_data/1000/bvecs_real ./1000/raw/bvecs_real
+		cp /N/dc2/projects/lifebid/Concussion/concussion_test/1_5/diffusion_data/1000/bvecs_real ./2000/raw/bvecs_real
 		cp /N/dc2/projects/lifebid/code/bacaron/pestillilab_projects/Concussion/dti_init_batch.m ./dti_init_batch.m		
 		matlab -r "dti_init_batch"
 done
