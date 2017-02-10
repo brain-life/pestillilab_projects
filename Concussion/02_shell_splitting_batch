@@ -1,0 +1,42 @@
+#!/bin/bash -x
+## Reorganize folder structure for each subject for the Concussion project 
+##
+## Also IMPORTANTLY splits shells from the multishell data into individual shells
+## Using Franco Pestilli's MatLab Script.
+##
+## This is necessary because the FSL preprocessing the MRTRIX processing scritps expext different fodler structures.
+## 
+## 2017 Brad Caron Indiana University, Pestilli Lab.
+
+## Setting up variables
+subj="1_5" # subjects
+projdir1="/N/dc2/projects/lifebid/Concussion/concussion_test" # path to data directory
+
+## Organize Folders
+for subjects in $subj
+	do
+		# Organize file structure
+		cd $projdir1/$subj
+		mkdir -v diffusion_data
+		mkdir -v ./diffusion_data/fibers
+		
+		## BVECS and BVALS
+		cp -v ./diffusion_directory/diffusion/bvals \
+		      ./diffusion_data/data.bvals
+		cp -v ./diffusion_directory/diffusion/bvecs \
+		      ./diffusion_data/data.bvecs
+		
+		## DWI data set
+		cp -v ./diffusion_directory/diffusion/data.nii.gz \
+		      ./diffusion_data/data.nii.gz
+		      
+		## Copy the matlab file used to split the dataset into separate shell files.
+		cp -v /N/dc2/projects/lifebid/code/bacaron/pestillilab_projects/Concussion/bvals_bvecs_split.m \
+		     ./diffusion_data/bvals_bvecs_split.m	
+		cd diffusion_data
+		
+		# Split data into separate files (BVALS = 1000 and 2000)
+		matlab -r "bvals_bvecs_split"
+done
+
+
