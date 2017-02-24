@@ -1,0 +1,24 @@
+#!/bin/bash
+## Script for performing freesurfer segmentation on anatomical image.
+## Inputs are an anatomical image, subject number (subj), and project directory (projdir1). Outputs are all the ouputs from
+## freesurfer recon-all.  The aparc+aseg.nii.gz image will be needed for the creation of the white matter mask.
+## (github.com/brain-life/pestillilab_projects/Concussion/zero5_make_wm_mask.m). 
+## 
+## Brad Caron, Indiana University, Pestilli Lab 2017
+
+## The code is optimized and written for Karst at IU 
+## https://kb.iu.edu/d/bezu
+
+## load modules
+module load freesurfer
+
+## set up Freesurfer
+export SUBJECTS_DIR=/N/dc2/projects/lifebid/Concussion/concussion_test/freesurfer
+source $FREESURFER_HOME/SetUpFreeSurfer.sh
+
+## inputs. Subj is the subject folder, and projdir1 is the folder where the data is stored. Change for your file structure.
+subj="1_5"; 
+projdir1="/N/dc2/projects/lifebid/Concussion/concussion_test";
+
+
+recon-all -s concuss_hq -i $projdir1/$subj/diffusion_directory/Anatomy/t1_acpc.nii.gz - all
