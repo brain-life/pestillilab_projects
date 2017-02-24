@@ -1,4 +1,4 @@
-function ensemble_connectome_generator(subj,bvals)
+function zero7_ensemble_connectome_generator(subj,bvals)
 % This function will combine all of the outputs from mrtrix tractography into singular .mat file.  This will be used
 % in LiFE and AFQ steps. Function created by Franco Pestilli.
 %
