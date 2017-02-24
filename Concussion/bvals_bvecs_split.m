@@ -1,13 +1,15 @@
-function bvals_bvecs_split
+function bvals_bvecs_split(subj,bvals,projdir1)
 
-%% Matlab script for splitting shells and generating data, bvec and bval files for each shell in multi-shell data. Script developed by Franco Pestilli (2014); adapted and used by Brad Caron (IU Graduate Student, 2016) for the microstructure in concussion-prone athletics study.
+% Matlab script for splitting shells and generating data, bvec and bval files for each shell in multi-shell data. 
+% Script developed by Franco Pestilli (2014).
+%
+% 2017 Brad Caron Indiana University, Pestilli Lab.
 
-
-% seperate bvals/bvecs
-% build paths
+% File structure for "Effect of long-term participation in high-impact sport" (Caron et al, 2017; in prep) study.
+% These three lines can be removed, but will need to be added to the matlab command line of the zero2_bvecs_bvals_split 
+% script (github.com/brain-life/pestillilab_projects/Concussion/zero2_bvecs_bvals_split)
 subj = '1_5'; % subject; add all subjects for batch
-b_vals = {'1000','2000'}; % separate shells
-stem = 'data'; % stem used for writing output files
+bvals = {'1000','2000'}; % separate shells
 projdir1 = '/N/dc2/projects/lifebid/Concussion/concussion_test'; % path to data directory
 
 % Split data into two separate files (BVALS = 1000 and 2000).
@@ -46,9 +48,10 @@ bvecs2000 = dlmread('data.bvecs');
 bvecs2000 = bvecs2000(:,all_2000);
 dlmwrite('data_b2000.bvecs',bvecs2000);
 
-for ibv = 1:length(b_vals)
-bvecs = fullfile(projdir1, subj, 'diffusion_data', sprintf('data_b%s.bvecs',b_vals{ibv}));
-bvals = fullfile(projdir1, subj, 'diffusion_data', sprintf('data_b%s.bvals',b_vals{ibv}));
+% Create .b file needed for mrtrix tracking
+for ibv = 1:length(bvals)
+bvecs = fullfile(projdir1, subj, 'diffusion_data', sprintf('data_b%s.bvecs',bvals{ibv}));
+bvals = fullfile(projdir1, subj, 'diffusion_data', sprintf('data_b%s.bvals',bvals{ibv}));
 out   = fullfile(projdir1, subj, 'diffusion_data', 'fibers', sprintf('data_b%s.b', b_vals{ibv}));
 mrtrix_bfileFromBvecs(bvecs, bvals, out);
 end
