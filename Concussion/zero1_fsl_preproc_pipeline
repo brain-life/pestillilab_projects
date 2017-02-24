@@ -1,8 +1,10 @@
 #!/bin/bash
 
-## Script for preprocessing both phase encoding directions and combining to singular diffusion-weighted MRI nifti fiels.
+## Script for preprocessing both phase encoding directions and combining to singular diffusion-weighted MRI nifti files.
+## Inputs are PA.nii.gz, AP.nii.gz, bval and bvec files. There will be many outputs, with data.nii.gz and the tensor files
+## being needed for future processing and any tensor-based analyses.
 ##
-## Modified from early code by Hu Cheng adtapted fromthe Human Connectome Pipelines. 
+## Modified from early code by Hu Cheng adtapted from the Human Connectome Pipelines. 
 ## 
 ## Brad Caron, Indiana University, Pestilli Lab 2017
 
@@ -12,9 +14,9 @@
 ## Load modules
 module load fsl/5.0.9
 
-## FIle paths
+## File paths
 ## We first identify files on the path on DC2 at IU
-##  Data directory; replace with your data directory set-up.
+## Data directory; replace with your data directory set-up.
 datadir1="/N/dc2/projects/lifebid/Concussion/concussion_test";
 
 ## Subjects are coded as numbers we define a range of subjects such as 1_5
@@ -23,7 +25,7 @@ subj="1_5";
 ## path to diffusion directory
 diffdir1="$datadir1/$subj/diffusion_directory/diffusion";
 
-## We need twofiles an AP and PA files to be iused to estimate distorsions.
+## We need two files, an AP and PA files, to be used to estimate distortions.
 ## Phase encoding directorion folders
 diffphase="PA AP";
 
@@ -36,15 +38,15 @@ for phase in $diffphase
 		cd $diffdir1/$phase;
 		eddy_correct $phase r$phase 0; ## eddy-correction
 		
-		## 
-		. $datadir1/$subj/diffusion_directory/bin/reorgDTI r$phase; ## reorganizes b0 images
+		## custom script for reorganizing b0 images (github.com/brain-life/pestillilab_projects/Concussion/reorgDTI)
+		. $datadir1/$subj/diffusion_directory/bin/reorgDTI r$phase;
 		
 		## 
 		fslmaths nodif -Tmean ${phase}_nodif_mean; ## averages no diffusion images
 		bet ${phase}_nodif_mean nodif_brain -f 0.4 -g 0 -m; ## brain extraction
 done
 
-## Merge directions, apply top-up, fit tensors
+## Move into directory for fslmerge
 cd $diffdir1
 
 ## merging b0 images to mean no diffusion image of each direction
