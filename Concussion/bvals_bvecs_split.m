@@ -6,7 +6,7 @@ function bvals_bvecs_split(subj,bvals,projdir1)
 % 2017 Brad Caron Indiana University, Pestilli Lab.
 
 % File structure for "Effect of long-term participation in high-impact sport" (Caron et al, 2017; in prep) study.
-% These three lines can be removed, but will need to be added to the matlab command line of the zero2_bvecs_bvals_split 
+% These three lines can be removed, but will need to be added to the matlab command line of the zero2_bvalss_bvecs_split 
 % script (github.com/brain-life/pestillilab_projects/Concussion/zero2_bvecs_bvals_split)
 subj = '1_5'; % subject; add all subjects for batch
 bvals = {'1000','2000'}; % separate shells
