@@ -9,6 +9,8 @@
 ## The code is optimized and written for Karst at IU 
 ## https://kb.iu.edu/d/bezu
 
+## Brad Caron, Indiana University, Pestilli Lab 2017
+
 ## Load modules for Karst
 module load mricron
 
