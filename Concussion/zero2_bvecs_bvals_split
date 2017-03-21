@@ -1,0 +1,65 @@
+#!/bin/bash
+## Reorganize folder structure for each subject for the Concussion project 
+##
+## Also, IMPORTANTLY, splits shells from the multishell data into individual shells
+## Using Franco Pestilli's MatLab Script.
+##
+## This is necessary because the FSL preprocessing the MRTRIX processing scritps expext different folder structures and 
+## can't perform tracking on multi-shell data.
+##
+## This script calls to a matlab script (github.com/brain-life/pestillilab_projects/Concussion/bvals_bvecs_split.m). Inputs
+## are subject number (subj) and b-values (bvals).  Outputs are dwi.b file, data_b{values}.nii.gz, data_b{values}.bvals,
+## and data_b{values}.bvecs.
+##
+## 2017 Brad Caron Indiana University, Pestilli Lab.
+
+## Setting up variables
+## Subject for study; modify for your file structure
+subj="1_5"
+
+## b-values for study; modify for your data
+bvals="1000 2000"
+
+## project directory where data is stored; modify for your file structure
+projdir1="/N/dc2/projects/lifebid/Concussion/concussion_test"
+
+## Organize Folders
+for subjects in $subj
+	do
+		# Organize file structure
+		cd $projdir1/$subj
+		mkdir -v diffusion_data
+		mkdir -v ./diffusion_data/fibers
+		mkdir ./diffusion_data/1000
+		mkdir ./diffusion_data/2000
+		mkdir ./diffusion_data/1000/raw
+		mkdir ./diffusion_data/2000/raw
+		
+		## Anatomical file. Used an ac-pc aligned, brain extracted T1w image for this study. Not needed for
+		## this step, but is needed for dtiinit step.
+		cp $diffdir1/diffusion_directory/Anatomy/t1_acpc_bet.nii.gz ./1000/t1_acpc_bet.nii.gz
+		cp $diffdir1/diffusion_directory/Anatomy/t1_acpc_bet.nii.gz ./2000/t1_acpc_bet.nii.gz
+		
+		## BVECS and BVALS
+		cp -v ./diffusion_directory/diffusion/bvals \
+		      ./diffusion_data/data.bvals
+		cp -v ./diffusion_directory/diffusion/bvecs \
+		      ./diffusion_data/data.bvecs
+		
+		## DWI data set
+		cp -v ./diffusion_directory/diffusion/data.nii.gz \
+		      ./diffusion_data/data.nii.gz
+		      
+		## Copy the matlab file used to split the dataset into separate shell files.
+		cp -v /N/dc2/projects/lifebid/code/bacaron/pestillilab_projects/Concussion/bvals_bvecs_split.m \
+		     ./diffusion_data/bvals_bvecs_split.m	
+		cd diffusion_data
+		
+		## Split data into separate files (BVALS = 1000 and 2000).  Look at bvals_bvecs_split.m script for potential
+		## edit to this line (github.com/brain-life/pestillilab_projects/Concussion/bvals_bvecs_split.m). 
+		## The line can be ammended to include subjects, bvals, and projdir1. 
+		## Ex. matlab -r "bvals_bvecs_split(subj,bvals,projdir1)
+		matlab -r "bvals_bvecs_split"
+done
+
+
