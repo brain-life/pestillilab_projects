@@ -50,7 +50,7 @@ for ibv = 1:length(bvals)
 		end
 
 	% Write fascicle group to disk.
-	fgFileName = fullfile(fe_path, 'major_tracts', sprintf('data_b1000_aligned_trilin_noMEC_ensemble.mat',lmaxparam{ilm});
+	fgFileName = fullfile(fe_path, 'major_tracts', sprintf('data_b%s_aligned_trilin_noMEC_ensemble.mat',bvals,lmaxparam{ilm}));
 	fgWrite(fg,fgFileName);
 	clear fg
 	end

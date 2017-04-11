@@ -1,4 +1,4 @@
-function zero_8_LiFE(subj, cacheDir)
+function zero_8_LiFE(subj, bvals)
 %
 % LiFE function (Pestilli et al, 2014, Nature Methods).  This will evaluate ensemble connectome generated from 
 % ensemble_connectome_generator.m (github.com/brain-life/pestillilab-projects/Concussion/zero7_ensemble_connectome_generator.m).
@@ -12,13 +12,13 @@ function zero_8_LiFE(subj, cacheDir)
 % 2017 Brad Caron Indiana University, Pestilli Lab
 
 % edit these for your file structure
-anatomyFile = ['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/1000/t1_acpc_bet.nii.gz'];
+anatomyFile = ['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/' bvals '/t1_acpc_bet.nii.gz'];
 feFileName = 'data_b1000_aligned_trilin_noMEC_ensemble_FE';
-dwiFile = ['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/1000/data_b1000_aligned_trilin_noMEC.nii.gz'];
+dwiFile = ['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/' bvals '/data_b1000_aligned_trilin_noMEC.nii.gz'];
 fgFileName = 'data_b1000_aligned_trilin_noMEC_ensemble.mat';
-fe_path = ['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj 'diffusion_data/1000'];
+fe_path = ['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj 'diffusion_data/' bvals];
 dwiFileRepeated = [];
-savedir = ['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/1000/life'];
+savedir = ['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/' bvals '/life'];
 
 % Build the life model into an fe structure
 L = 360; % Discretization parameter
@@ -32,13 +32,13 @@ fit = feFitModel(feGet(fe,'model'),feGet(fe,'dsigdemeaned'),'bbnnls',Niter,'prec
 fe = feSet(fe,'fit',fit);
 
 % Save the life model to disk; again, edit for your file structure
-save(['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/1000/life/optimized_life_1'], 'fe', '-v7.3');
+save(['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/' bvals '/life/optimized_life_1'], 'fe', '-v7.3');
 
 % Extract the fascicles with positive weight
 w  = feGet(fe,'fiber weights'); % Collect the weights associated with each fiber
 fg = feGet(fe,'fibers acpc');
 fg = fgExtract(fg, w > 0);
 % edit for your file structure
-save(['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/1000/life/optimized_life_connectome_1'], 'fg', '-v7.3');
+save(['/N/dc2/projects/lifebid/Concussion/concussion_test/' subj '/diffusion_data/' bvals '/life/optimized_life_connectome_1'], 'fg', '-v7.3');
 
 end
