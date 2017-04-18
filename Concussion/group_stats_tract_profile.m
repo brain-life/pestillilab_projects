@@ -1,53 +1,34 @@
 function group_stats_tract_profile(bvals,fiberFile,tractNumber)
 
+data_path = '/N/dc2/projects/lifebid/Concussion/concussion_test/';
 tract_labels = {'Left Thalamic Radiation', 'Right Thalamic Radiation', 'Left Corticospinal', 'Right Corticospinal', ...
                 'Left Cingulum Cingulate', 'Right Cingulum Cingulate', 'Left Cingulum Hippocampus', 'Right Cingulum Hippocampus', ...
                 'Callosum Forceps Major', 'Callosum Forceps Minor', 'Left IFOF', 'Right IFOF', 'Left ILF', 'Right ILF', 'Left SLF', ...
                 'Right SLF', 'Left Uncinate', 'Right Uncinate', 'Left Arcuate', 'Right Arcuate'}
 
-group1 = {'1_001', '1_002', '1_003', '1_005', '1_006', '1_007', '1_008', ...
+group{1} = {'1_001', '1_002', '1_003', '1_005', '1_006', '1_007', '1_008', ...
         '1_009', '1_012', '1_013', '1_014', '1_015', '1_016', '1_017', ...
         '1_019', '1_020', '1_021'};
-group2 = {'2_023', '2_026', '2_027', '2_028', '2_029', '2_030', '2_033', ...
+group{2} = {'2_023', '2_026', '2_027', '2_028', '2_029', '2_030', '2_033', ...
           '2_034', '2_035', '2_036', '2_037', '2_038', '2_039', '2_040', ...
           '2_041'};
-group3 = {'3_044', '3_045', '3_046', '3_049', '3_050', '3_052', '3_053', ...
+group{3} = {'3_044', '3_045', '3_046', '3_049', '3_050', '3_052', '3_053', ...
           '3_054', '3_055'};
 
-for ii = 1:length(group1)
-    filePath = ['/N/dc2/projects/lifebid/Concussion/concussion_test/', group1{ii}, '/diffusion_data/', bvals, '/life/', fiberFile, '/stats_for_group_', num2str(tractNumber)];
+for jj = 1:length(group)
+for ii = 1:length(group{jj})
+    filePath = [data_path, group{jj}{ii}, '/diffusion_data/', bvals, '/life/', fiberFile, '/stats_for_group_', num2str(tractNumber)];
     try
-        group_1_data{ii} = load(filePath)
+        group(jj).data(ii) = load(filePath)
     catch ME
         display('error occurred...moving on')
     end
 end
 
-for ii = 1:length(group2)
-    filePath = ['/N/dc2/projects/lifebid/Concussion/concussion_test/', group2{ii}, '/diffusion_data/', bvals, '/life/', fiberFile, '/stats_for_group_', num2str(tractNumber)];
-    try
-        group_2_data{ii} = load(filePath)
-    catch ME
-        display('error occurred...moving on')
-    end
+% Count how many tracts had no streamlines
+group(jj).idx_segmented_tracts    = find(~cellfun(@isempty,group(jj).data));
+group(jj).number_segmented_tracts = numel(group(jj).idx_segmented_tracts);
 end
-
-for ii = 1:length(group3)
-    filePath = ['/N/dc2/projects/lifebid/Concussion/concussion_test/', group3{ii}, '/diffusion_data/', bvals, '/life/', fiberFile, '/stats_for_group_', num2str(tractNumber)];
-    try
-        group_3_data{ii} = load(filePath)
-    catch ME
-        display('error occurred...moving on')
-    end
-end
-
-group_1_nonzero_cells = find(~cellfun(@isempty,group_1_data));
-group_2_nonzero_cells = find(~cellfun(@isempty,group_2_data));
-group_3_nonzero_cells = find(~cellfun(@isempty,group_3_data));
-
-group_1_number_nonzero = numel(group_1_nonzero_cells);
-group_2_number_nonzero = numel(group_2_nonzero_cells);
-group_3_number_nonzero = numel(group_3_nonzero_cells);
 
 group_1_sum_fa = 0;
 for ii = 1:length(group1)
@@ -184,7 +165,7 @@ group_1_avg_md = group_1_sum_md / numel(group_1_nonzero_cells);
 group_2_avg_md = group_2_sum_md / numel(group_2_nonzero_cells);
 group_3_avg_md = group_3_sum_md / numel(group_3_nonzero_cells);
 
-% plot fa
+% Make the following into plotting a code script
 		nodesToPlot = 50:151;
 
 		h.tpfig = figure('name', 'My tract profile','color', 'w', 'visible', 'off');
