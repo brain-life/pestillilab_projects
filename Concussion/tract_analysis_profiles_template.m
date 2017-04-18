@@ -25,7 +25,11 @@ fg = fg_classified( tract );
 
 		% 2. compute the core fiber from the fiber group (the tact profile is computed here)
 		[fa, md, rd, ad, cl, core] = dtiComputeDiffusionPropertiesAlongFG( fg, dt,[],[],200);
- 
+                
+		% How to make a trct profile from a NIFTI file (such as from a run model)
+		% nifti_file = niftiRead('path/to/nifti/file.nii.gz')
+		% val = dtiComputeDiffusionPropertiesAlongFG( fg, nifti_file,[],[],200);
+
 		% 3. Select a center portion fo the tract and show the FA and MD values 
 		% normally we only use for analyses the middle most reliable portion of the fiber.
 		nodesToPlot = 50:151;
