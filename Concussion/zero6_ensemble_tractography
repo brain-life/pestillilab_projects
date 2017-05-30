@@ -28,7 +28,7 @@ OUTDIR=$TOPDIR/fibers_new
 mkdir -v $OUTDIR
 
 ## Number of fibers requested and max number attempted to hit the number.
-NUMFIBERS=60,000
+NUMFIBERS=500000
 MAXNUMFIBERSATTEMPTED=1000000
 
 ##
