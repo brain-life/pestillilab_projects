@@ -8,7 +8,7 @@
 % Dependencies:
 % addpath(genpath('~/path/to/spm8'))       % -> SPM/website
 % addpath(genpath('~/path/to/vistasoft')); % -> https://www.github.com/vistalab/vistasoft
-% addpath(genpath('~/path/to/life'));      % -> https://www.github.com/francopestilli/life
+% addpath(genpath('~/path/to/life'));      % -> https://www.github.com/brain-life/encode
 % addpath(genpath('~/path/to/mba'));       % -> https://www.github.com/francopestilli/mba
 
 
